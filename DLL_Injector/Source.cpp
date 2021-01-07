@@ -91,7 +91,7 @@ bool InjectDLL(const int &pid, const string &DLL_Path)
 		return false;
 	}
 
-	cout << "[+]Allocating memory in Targer Process." << endl;
+	cout << "[+]Allocating memory in Target Process." << endl;
 	int IsWriteOK = WriteProcessMemory(hProc , MyAlloc, DLL_Path.c_str() , dll_size, 0);
 	if (IsWriteOK == 0)
 	{
